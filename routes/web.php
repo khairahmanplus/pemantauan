@@ -11,6 +11,8 @@ Route::get('users', function () {
     return view('users.index', ['users' => $users]);
 });
 // Kembalikan borang untuk create pengguna baru
-Route::get('users/create', function () {});
+Route::get('users/create', function () {
+    return view('users.create');
+});
 // Memaparkan butiran pengguna
 Route::get('users/{id}', function () {});
