@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.dashboard')
 
 @section('content')
     <div class="container">
@@ -9,6 +9,7 @@
                 </tr>
             </thead>
             <tbody>
+                {{-- Komen --}}
                 @foreach ($users as $user)
                     <tr>
                         <td>{{ $user ?? '-' }}</td>
@@ -17,4 +18,10 @@
             </tbody>
         </table>
     </div>
+@endsection
+
+@section('javascript')
+<script>
+    alert('Hello');
+</script>
 @endsection

@@ -1,4 +1,5 @@
 <?php
+Route::get('/', function () {});
 // Senaraikan pengguna di dalam pangkalan data
 Route::get('users', function () {
     // Dapatkan dari database
