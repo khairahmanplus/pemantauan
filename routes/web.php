@@ -4,4 +4,4 @@ Route::get('users', 'UserController@paparkanSenaraiPengguna');
 // Kembalikan borang untuk create pengguna baru
 Route::get('users/create', 'UserController@paparkanBorang');
 // Memaparkan butiran pengguna
-Route::get('users/{id}', 'UserController@paparkanButiran');
+Route::get('users/{id}', 'UserController@paparkanButiranPengguna');
